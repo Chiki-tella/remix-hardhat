@@ -1,4 +1,11 @@
-# SafeSave Blockchain Prototype
+# 🏦 SafeSave Blockchain Prototype
+
+[![Solidity](https://img.shields.io/badge/Solidity-0.8.20-blue)](https://docs.soliditylang.org/) 
+[![Hardhat](https://img.shields.io/badge/Hardhat-v3.1.7-orange)](https://hardhat.org/) 
+[![Node.js](https://img.shields.io/badge/Node.js->=20-green)](https://nodejs.org/) 
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue)](https://www.typescriptlang.org/)
+
+
 
 A Hardhat v3 + Remix blockchain project template demonstrating deployment and interaction of Solidity smart contracts using **ViEM**.  
 
