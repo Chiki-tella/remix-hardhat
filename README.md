@@ -1,57 +1,46 @@
-# Sample Hardhat 3 Beta Project (`node:test` and `viem`)
+# SafeSave Blockchain Prototype
 
-This project showcases a Hardhat 3 Beta project using the native Node.js test runner (`node:test`) and the `viem` library for Ethereum interactions.
+A Hardhat v3 + Remix blockchain project template demonstrating deployment and interaction of Solidity smart contracts using **ViEM**.  
 
-To learn more about the Hardhat 3 Beta, please visit the [Getting Started guide](https://hardhat.org/docs/getting-started#getting-started-with-hardhat-3). To share your feedback, join our [Hardhat 3 Beta](https://hardhat.org/hardhat3-beta-telegram-group) Telegram group or [open an issue](https://github.com/NomicFoundation/hardhat/issues/new) in our GitHub issue tracker.
+This project serves as a foundation for building cooperative savings systems like **SafeSave**, where members can deposit funds and track balances on-chain, preventing fraud or mismanagement.
 
-## Project Overview
+---
 
-This example project includes:
+## Features
 
-- A simple Hardhat configuration file.
-- Foundry-compatible Solidity unit tests.
-- TypeScript integration tests using [`node:test`](nodejs.org/api/test.html), the new Node.js native test runner, and [`viem`](https://viem.sh/).
-- Examples demonstrating how to connect to different types of networks, including locally simulating OP mainnet.
+- Compile and deploy Solidity contracts locally using Hardhat v3
+- Interact with contracts using TypeScript scripts
+- Example contract `ReactangleArea.sol` with console debugging
+- Ready for extension to cooperative/fund management systems
+- Fully compatible with Windows, Linux, and macOS environments
 
-## Usage
+---
 
-### Running Tests
+## Smart Contracts Included
 
-To run all the tests in the project, execute the following command:
+### `ReactangleArea.sol`
+- Simple contract demonstrating calculation logic
+- Uses `console.log` for debugging
+- Shows deployment and interaction workflow
 
-```shell
-npx hardhat test
-```
+### `SafeSave.sol`
+- Tracks deposits of cooperative members
+- Records individual balances and total savings
+- Event logging for all deposits
 
-You can also selectively run the Solidity or `node:test` tests:
+---
 
-```shell
-npx hardhat test solidity
-npx hardhat test nodejs
-```
+## Getting Started
 
-### Make a deployment to Sepolia
+### Prerequisites
+- Node.js >= 20
+- npm
+- Git
 
-This project includes an example Ignition module to deploy the contract. You can deploy this module to a locally simulated chain or to Sepolia.
+### Installation
+Clone the repository:
 
-To run the deployment to a local chain:
-
-```shell
-npx hardhat ignition deploy ignition/modules/Counter.ts
-```
-
-To run the deployment to Sepolia, you need an account with funds to send the transaction. The provided Hardhat configuration includes a Configuration Variable called `SEPOLIA_PRIVATE_KEY`, which you can use to set the private key of the account you want to use.
-
-You can set the `SEPOLIA_PRIVATE_KEY` variable using the `hardhat-keystore` plugin or by setting it as an environment variable.
-
-To set the `SEPOLIA_PRIVATE_KEY` config variable using `hardhat-keystore`:
-
-```shell
-npx hardhat keystore set SEPOLIA_PRIVATE_KEY
-```
-
-After setting the variable, you can run the deployment with the Sepolia network:
-
-```shell
-npx hardhat ignition deploy --network sepolia ignition/modules/Counter.ts
-```
+```bash
+git clone https://github.com/YOUR_USERNAME/remix-hardhat.git
+cd remix-hardhat
+npm install
