@@ -41,6 +41,6 @@ This project serves as a foundation for building cooperative savings systems lik
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/remix-hardhat.git
+git clone https://github.com/Chiki-tella/remix-hardhat.git
 cd remix-hardhat
 npm install
